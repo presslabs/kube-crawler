@@ -1,0 +1,28 @@
+
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  creationTimestamp: null
+  name: manager-role
+rules:
+- apiGroups:
+  - crawl.presslabs.org
+  resources:
+  - crawlurls
+  verbs:
+  - get
+  - list
+  - watch
+  - create
+  - update
+  - patch
+  - delete
+- apiGroups:
+  - crawl.presslabs.org
+  resources:
+  - crawlurls/status
+  verbs:
+  - get
+  - update
+  - patch

@@ -1,0 +1,7 @@
+apiVersion: crawl.presslabs.org/v1
+kind: CrawlURL
+metadata:
+  name: wikipedia
+spec:
+  # Add fields here
+  url: https://www.wikipedia.org

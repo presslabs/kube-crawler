@@ -1,0 +1,7 @@
+version: "2"
+domain: presslabs.org
+repo: github.com/presslabs/kube-crawler-controller
+resources:
+- group: crawl
+  version: v1
+  kind: CrawlURL
